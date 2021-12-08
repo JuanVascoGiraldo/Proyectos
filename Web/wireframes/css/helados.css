@@ -1,0 +1,124 @@
+.header {
+    background: #482058;
+    color: white;
+    padding: 2rem 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+  }
+  
+  .header a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    flex-wrap: wrap;
+  }
+  
+  /* logo */
+  .logo {
+    letter-spacing: 15px;
+    font-size: 1.3em;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  .navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .navigation ul li {
+    display: inline-block;
+  }
+  .navigation ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s linear;
+    border-radius: 5px;
+  }
+  .main {
+    padding-top: 9rem;
+    width: 80%;
+    margin-left: 9rem;
+    margin-bottom: 9rem;
+    text-align: center;
+  }
+
+  footer{
+    width: 100%;
+    padding: 1rem;
+    clear: both;
+    left: 0;
+    bottom: 0;
+    background-color: #9b57c1;
+    color:#f3f0e5 ;
+    font-size: 1.2rem;
+    position: fixed;
+    text-align: center;
+  }
+
+  .heladitos{
+      width: 180px;
+      border-radius: 20px;
+      border: 1px solid black;
+      background-color:#c695db;
+      text-align: center;
+      margin-left: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      display: inline-block;
+  }
+
+  .boton{
+    margin-top: 30px;
+    width: 100px;
+    margin-left: 2.8rem;
+    border: 1px solid black;
+    border-radius: 20px;
+  }
+
+  .boton:hover{
+    color: white;
+    background-color: rgba(89, 0, 1, 1);
+    box-shadow: 0px 0px 30px rgba(89, 0, 1, 1);
+    z-index: 2;
+  }
+
+  .heladitos:hover{
+    box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+  }
+
+  .boton2{
+    margin-top: 1rem;
+    margin-left: 26rem;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 20%;
+  }
+
+  .boton2:hover{
+    color: white;
+    background-color: rgba(89, 0, 1, 1);
+    box-shadow: 0px 0px 30px rgba(89, 0, 1, 1);
+    z-index: 2;
+  }
+
+  .opciones{
+    display: inline-block;
+  }
+
+  input{
+      border-radius: 20px;
+  }
+

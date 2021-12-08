@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/logo.png">
+    <title>Administrador</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href= "assets/css/eliminar.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav">
+                    <li><a href="index.html" class="iconos">BEN AND JERRY'S</a></li>
+                    <li><a href="contactanos.html" class="iconos"><span class="material-icons">email</span></a></li>
+                </ul>
+                <form class="form-inline mr-auto" target="_self">
+                    <div class="form-group mb-0"><label for="search-field"></label></div>
+                </form><a class="buton " role="button" href="admin.html"><span class="material-icons">arrow_back</span></a>
+            </div>
+        </nav>
+    </header>
+    <div class="contenedor">
+        <h2>¿Qué quieres agregar?</h2>
+        <div class="producto">
+            <form method="post" class="formularios">
+                <h2>Producto</h2>
+                <input class="form-control" type="number" name="id" placeholder="ID producto" required="true" minlength="1" maxlength="100">
+                <button class="btn btn-primary btn-block boton" type="submit">Eliminar</button>
+                <button class="btn btn-primary btn-block boton" type="submit">Limpiar</button>
+            </form>
+
+        </div>
+        <div class="promocion">
+            <form method="post" class="formularios">
+                <h2>Promoción</h2>
+                <input class="form-control" type="number" name="id" placeholder="ID promoción" required="true" minlength="1" maxlength="100">
+                <button class="btn btn-primary btn-block boton" type="submit">Eliminar</button>
+                <button class="btn btn-primary btn-block boton" type="submit">Limpiar</button>
+            </form>
+
+        </div>
+        <div class="usuario" >
+            <form method="post" class="formularios">
+                <h2>Usuario</h2>
+                <input class="form-control" type="number" name="id" placeholder="ID usuario" required="true" minlength="1" maxlength="100">
+                <button class="btn btn-primary btn-block boton" type="submit">Eliminar</button>
+                <button class="btn btn-primary btn-block boton" type="submit">Limpiar</button>
+            </form>
+
+        </div>
+
+    </div>
+    <footer>
+        <p>Integrantes:</p>
+        <p>Alan Elizalde Hernández</p>
+        <p>Kelly Nicole Guerrero Astudillo</p>
+        <p>Leonardo Zamudio López</p>
+    </footer>
+    
+</body>
+</html>

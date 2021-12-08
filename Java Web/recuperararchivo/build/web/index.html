@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form name="formulario" method="POST" enctype="multipart/form-data" action="miaumiau">
+    <table>
+    <tr>
+    <td>Seleccione Archivo</td><td><input type="file" name="archivo" /></td>
+    </tr>
+    <tr>
+        <td colspan="2"><input type="text" name="llave" id="llave" placeholder="Ingrese una llave de 8 digitos" minlength="8" maxlength="8" ></td>
+    </tr>
+    <tr>
+        <td><input type="button" onclick="cifrar()" name="proceso" value="Cifrar" /></td>
+        <td><input type="button" onclick="descifrar()" name="proceso" value="Descifrar" /></td>
+    </tr>
+    </table>
+    <input type="hidden" name="accion" id="accion" value="" />
+    </form>
+        <script src="script.js"></script>
+    </body>
+</html>

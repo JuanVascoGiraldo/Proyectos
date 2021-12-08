@@ -1,0 +1,102 @@
+
+  
+  h1 {
+    font-size: 2rem;
+    line-height: 1.3em;
+    text-align: center;
+  }
+  
+  /* parrafos */
+  p {
+    margin-bottom: 1.6em; /*margen inferior funciona como enter entre parrafos*/
+  }
+  
+  .container {
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+  }
+  
+  .header {
+    background: rgb(47, 0, 0);
+    color: white;
+    padding: 2rem 0;
+  
+    /* hacer el menu fijo */
+    position: fixed;
+    left: 0;
+    top: 0;
+    /* ocuapamos todo el ancho */
+    right: 0;
+  }
+  
+  .header a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    /* lo alineamos al centro */
+    align-items: center;
+  
+    flex-wrap: wrap;
+  }
+  
+  /* logo */
+  .logo {
+    letter-spacing: 15px;
+    font-size: 1.3em;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  /* todos los "ul" que esten dentro de "navigation" */
+  .navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .navigation ul li {
+    /* uno al lado del otro */
+    display: inline-block;
+  }
+  
+  /* los enlaces dentro del menu */
+  .navigation ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s linear;
+    border-radius: 5px;
+  }
+  
+  .navigation ul li a:hover {
+    background: #cc4444;
+  }
+  
+  .main {
+    padding-top: 12rem;
+  }
+
+  .boton_personalizado{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 200%;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 15px 15px 15px 15px;
+    border: 2px solid #000000;
+}
+.boton_personalizado:hover{
+    color: #ffffff;
+    background: #cc4444;
+  }
+.a{
+    display: flex;
+    justify-content: center;
+}

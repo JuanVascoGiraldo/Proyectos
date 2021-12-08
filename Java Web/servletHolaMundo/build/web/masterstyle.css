@@ -1,0 +1,85 @@
+body{
+    padding-top: 5rem;
+    background-color: #0D3B66;
+}
+
+div{
+    display: inline-block;
+    width: 49%;
+    align-items:center;
+}
+.menu {
+    display: inline-block;
+    justify-content: center;
+    height: 45%;
+  }
+.menu a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+  }
+  
+.menu a span {
+    transition: transform 0.2s ease-out;
+  }
+  
+.menu a span:first-child {
+    display: inline-block;
+    padding: 10px;
+  }
+
+.menu a span:last-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%);
+  }
+  .menu a:hover span:first-child {
+    transform: translateY(100%);
+  }
+  
+  .menu a:hover span:last-child,
+  .menu[data-animation] a:hover span:last-child {
+    transform: none;
+  }
+  
+  .menu[data-animation="to-top"] a span:last-child {
+    transform: translateY(100%);
+  }
+  
+  .menu[data-animation="to-top"] a:hover span:first-child {
+    transform: translateY(-100%);
+  }
+  
+  .menu[data-animation="to-right"] a span:last-child {
+    transform: translateX(-100%);
+  }
+  
+  .menu[data-animation="to-right"] a:hover span:first-child {
+    transform: translateX(100%);
+  }
+  
+  .menu[data-animation="to-left"] a span:last-child {
+    transform: translateX(100%);
+  }
+  
+  .menu[data-animation="to-left"] a:hover span:first-child {
+    transform: translateX(-100%);
+  }
+  
+  .iconos{
+    margin-left: 4rem;
+  }
+
+  .maincontainer1{
+      text-align: center;
+  }
+
+  .imgpad{
+    margin-left: 4rem;
+    }

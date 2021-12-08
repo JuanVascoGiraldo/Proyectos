@@ -1,0 +1,21 @@
+REQUISITOS E INSTRUCCIONES:
+
+- Flask (pip install Flask)
+- SciPy (pip install scipy)
+- Matplotlib (pip install Matplotlib)
+
+NOTA: TODOS LOS ARCHIVOS DEBEN ESTAR EN LA MISMA CARPETA PARA QUE FUNCIONE EL PROGRAMA
+
+Abrir el archivo "app.py" y ejecutarlo
+
+Aparecerán las siguientes lineas:
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+
+Abrir un navegador cualquiera y escribir en la barra de busqueda "localhost:5000" y dar enter
+
+El programa debería ejecutarse correctamente, viendo un encabezado y una gráfica en la página web.

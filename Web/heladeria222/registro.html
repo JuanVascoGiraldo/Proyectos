@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/logo.png">
+    <link href="./CSS/registro.css" rel="stylesheet">
+    <title>Registro</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="iconos"><span class="material-icons">home</span>Inicio</a></li>
+                <li><a class="iconos" href="iniciosesion.html"><span class="material-icons">account_circle</span>Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contenedor">
+        
+            <form method="post">
+                <h2>Regístrate</h2>
+                <input  type="text" placeholder="Nombre" required="true" minlength="6" maxlength="25">
+                <input  type="text" placeholder="Apellido Paterno" required="true" minlength="6" maxlength="40">
+                <input  type="text" placeholder="Apellido Materno" required="true" minlength="6" maxlength="40">
+                <input  type="number" placeholder="Edad"minlength="6" maxlength="40"required="true">
+                <input  type="text" placeholder="Domicilo" required="true" minlength="6" maxlength="70">
+                <input  type="number" placeholder="Teléfono fijo" min="5500000000" max="5599999999" required="true">
+                <input  type="number" placeholder="Teléfono celular" min="5500000000" max="5599999999" required="true">
+                <input  type="email" placeholder="Email" required="true" minlength="6" maxlength="45">
+                <input  type="password" placeholder="Contraseña" required="true" minlength="6" maxlength="45">
+                <button class="boton" type="submit">Registrarme</button>
+            </form>
+    </div>
+    
+
+    <footer>
+        Integrantes del equipo:
+    </footer>
+</body>
+</html>

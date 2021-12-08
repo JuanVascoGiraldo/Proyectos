@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="./css/helados.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./multimedia/administrador.png">
+</head>
+<body style="font-family: 'Noto Sans JP', sans-serif;">
+    <header class="header">
+        <div class="container logo-nav-container">
+            <h1 style="font-family: 'Noto Sans JP', sans-serif;">BENYS Y JERYS</h1>
+            <span class="menu-icon">Ver menú</span>
+            <nav class="navigation">
+                <ul class="show">
+                </li>
+                    <li><a href="">Volver</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="main">
+        <div>
+            <h2> Agregar Producto</h2>
+            <form name="agregarproducto" method="GET" action="AgregarHelado.html">
+                <input type="text" name="Nombre" placeholder="Nombre del Producto" maxlength="20">
+                <br>
+                <br>
+                <input type="number" name="Precio" placeholder="Precio del Producto" max="99999999">
+                <br>
+                <br>
+                <select name="sabores" id="sabores">
+                    <option selected="true" disabled="disabled">Elige el Sabor</option>
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Fresa">Fresa</option>
+                    <option value="Piña">Piña</option>
+                    <option value="Galleta">Galleta</option>
+                    <option value="Vanilla">Vanilla</option>
+                    <option value="Napolitano">Napolitano</option>
+                </select>
+                <br>
+                <br>
+                <div class="opciones">
+                    Imagen 1
+                    <br>
+                    <img src="multimedia/Helados.png" width="80px" height="80px">
+                </div>
+                <div class="opciones">
+                    Imagen 2
+                    <br>
+                    <img src="multimedia/helado2.png" width="80px" height="80px">
+                </div>
+                <div  class="opciones">
+                    Imagen 3
+                    <br>
+                    <img src="multimedia/helado3.png" width="80px" height="80px">
+                </div>
+                <br>
+                <select name="icono" id="icono">
+                    <option selected="true" disabled="disabled">Elige El icono</option>
+                    <option value="Helados">Imagen 1</option>
+                    <option value="helado2">Imagen 2</option>
+                    <option value="helado3">imagen 3</option>
+                </select>
+                <br>
+                <button type="button" onclick="validardatos()">Guardar</button>
+            </form>
+            <script src="./js/validar.js"></script>
+        </div>
+        </div>
+        <br>
+        <br>
+    </div>
+    <footer>
+        Iconos diseñados por <a href="https://www.freepik.com" title="Freepik">
+            Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a><br>
+        <div>Iconos diseñados por <a href="" title="xnimrodx">xnimrodx</a> from 
+            <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
+    </footer>
+</body>
+</html>

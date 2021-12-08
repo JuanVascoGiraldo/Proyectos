@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/logo.png">
+    <link href="./CSS/admin.css" rel="stylesheet">
+    <title>Administrador</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="iconos"><span class="material-icons">home</span>Inicio</a></li>
+        </ul>
+    </nav>
+    <div class="contenedor">
+        <section class="modificar">
+            <h2>¿Qué quieres modificar?</h2>
+            <div class="producto">
+                <form method="post" class="formularios">
+                    <h2>Producto</h2>
+                    <input class="form-control" type="number" name="id" placeholder="ID" required="true" minlength="1"
+                        maxlength="100">
+                    <input class="form-control" type="text" placeholder="Parametro a cambiar" required="true" minlength="1"
+                        maxlength="150">
+                    <input class="form-control" type="text" placeholder="Cambio a realizar" required="true" minlength="1"
+                        maxlength="150">
+                    <button class="btn btn-primary btn-block boton" type="submit">Guardar</button>
+                    <button class="btn btn-primary btn-block boton" type="submit">Limpiar</button>
+                </form>
+            </div>
+            <div class="promocion">
+                <form method="post" class="formularios">
+                    <h2>Promoción</h2>
+                    <input class="form-control" type="number" name="id" placeholder="ID" required="true" minlength="1"
+                        maxlength="100">
+                    <input class="form-control" type="text" placeholder="Parametro a cambiar" required="true" minlength="1"
+                        maxlength="150">
+                    <input class="form-control" type="text" placeholder="Cambio a realizar" required="true" minlength="1"
+                        maxlength="150">
+                    <button class="btn btn-primary btn-block boton" type="submit">Guardar</button>
+                    <button class="btn btn-primary btn-block boton" type="submit">Limpiar</button>
+                </form>
+            </div>
+            <div class="usuario">
+                <form method="post" class="formularios">
+                    <h2>Usuario</h2>
+                    <input class="form-control" type="number" name="id" placeholder="ID" required="true" minlength="1"
+                        maxlength="100">
+                    <input class="form-control" type="text" placeholder="Parametro a cambiar" required="true" minlength="1"
+                        maxlength="150">
+                    <input class="form-control" type="text" placeholder="Cambio a realizar" required="true" minlength="1"
+                        maxlength="150">
+                    <button class="btn btn-primary btn-block boton" type="submit">Guardar</button>
+                    <button class="btn btn-primary btn-block boton" type="submit">Limpiar</button>
+                </form>
+            </div>
+        </section>
+        <section class="eliminar">
+            <h2>¿Qué quieres eliminar?</h2>
+            <div class="producto">
+                <form method="post" class="formularios">
+                    <h2>Producto</h2>
+                    <input class="form-control" type="number" name="id" placeholder="ID producto" required="true"
+                        minlength="1" maxlength="100">
+                    <button class="btn btn-primary btn-block boton" type="submit">Eliminar</button>
+                    <button class="btn btn-primary btn-block boton" type="submit">Limpiar</button>
+                </form>
+            </div>
+            <div class="promocion">
+                <form method="post" class="formularios">
+                    <h2>Promoción</h2>
+                    <input class="form-control" type="number" name="id" placeholder="ID promoción" required="true"
+                        minlength="1" maxlength="100">
+                    <button class="btn btn-primary btn-block boton" type="submit">Eliminar</button>
+                    <button class="btn btn-primary btn-block boton" type="submit">Limpiar</button>
+                </form>
+            </div>
+            <div class="usuario">
+                <form method="post" class="formularios">
+                    <h2>Usuario</h2>
+                    <input class="form-control" type="number" name="id" placeholder="ID usuario" required="true"
+                        minlength="1" maxlength="100">
+                    <button class="btn btn-primary btn-block boton" type="submit">Eliminar</button>
+                    <button class="btn btn-primary btn-block boton" type="submit">Limpiar</button>
+                </form>
+            </div>
+        </section>
+        <section class="agregar">
+            <h2>¿Qué quieres agregar?</h2>
+            <div class="producto">
+                <form method="post" class="formularios">
+                    <h2>Producto</h2>
+                    <input class="form-control" type="number" name="id" placeholder="ID producto" required="true"
+                        minlength="1" maxlength="100">
+                    <button class="btn btn-primary btn-block boton" type="submit">Eliminar</button>
+                    <button class="btn btn-primary btn-block boton" type="submit">Limpiar</button>
+                </form>
+            </div>
+            <div class="promocion">
+                <form method="post" class="formularios">
+                    <h2>Promoción</h2>
+                    <input class="form-control" type="number" name="id" placeholder="ID promoción" required="true"
+                        minlength="1" maxlength="100">
+                    <button class="btn btn-primary btn-block boton" type="submit">Eliminar</button>
+                    <button class="btn btn-primary btn-block boton" type="submit">Limpiar</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    <footer>
+        Integrantes del equipo:
+    </footer>
+    
+</body>
+</html>

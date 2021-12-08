@@ -1,0 +1,173 @@
+*{
+  padding: 0;
+  margin: 0;
+
+}
+body, html{
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+header{
+  background: #073e89;
+  color: white;
+  width: 100%;
+  height: 15%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .6);
+  margin-top: 0%;
+  padding: 0%;
+  right: 0;
+}
+.logo{
+  height: 70px;
+  padding: 10px;
+  width: auto;
+  margin-left: 15px;
+}
+.cabecera{
+  margin: 0;
+  padding: 0%;
+  display: flex;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer{
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: right;
+  font-family: 'Calibri Light';
+  font-size: 1.5rem;
+  display: block;
+}
+
+.principal{
+  display: flex;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation ul li {
+  /* uno al lado del otro */
+  display: inline-block;
+}
+
+/* los enlaces dentro del menu */
+.navigation ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s linear;
+  border-radius: 5px;
+}
+
+.navigation ul li a:hover {
+  background: #7569e2;
+}
+p{
+  margin-right: 15px;
+  margin-bottom: 10px;
+  vertical-align: inherit;
+}
+.alfa{
+    padding: 50px;
+    width: 400px;
+    border-radius: 50px 50px 50px 50px;
+}
+.beta{
+    font-family: cursive;
+    padding: 50px;
+    background-color: rgba(233, 213, 213, .384);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .6);;
+    border-radius: 50px 50px 50px 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.gama{
+    font-size: 50px;
+}
+.delta{
+    font-size: 3.5rem;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+.cotenedor{
+  width: 95%;
+}
+h1{
+  text-align: center;
+  padding-top: 5%;
+  color: rgb(34, 66, 64);
+  text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+}
+form, input{
+  margin: 0 auto;
+  display: block;
+  padding: 2%;
+  font-family: 'Calibri Light';
+  font-size: 1.1rem;
+  color: lightslategray;
+  text-align: center;
+}
+input{
+  width: 90%;
+  border-radius:2rem;
+  background-color: #ffffff;
+  border: 5px solid #ffffff;
+  color: lightslategray;
+}
+form{
+  border-radius:2rem;
+  background-color: rgba(34, 66, 64, .3);
+  border: 5px solid rgba(34, 66, 64, .3);
+  width: 25%;
+}
+form a{
+  color: rgb(34, 66, 64);
+  font-size: 1rem;
+  float: right;
+  text-decoration: none;
+}
+form a:hover{
+  text-decoration: underline;
+}
+button{
+  margin-top: 2rem ;
+  padding: 2%;
+  border-radius:2rem;
+  background-color: #ffffff;
+  border: 5px solid #ffffff;
+}
+button:hover{
+  -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: 3px 3px 15px 5px #FF8080, -7px 3px 15px 5px #FFE488, -5px -3px 15px 5px #8CFF85, 10px -3px 15px 5px #80C7FF, 10px 8px 15px 7px #E488FF, -8px 8px 15px 7px #FF616B, -8px -5px 27px 1px #8E5CFF, 3px 3px 15px 5px rgba(0,0,0,0);
+}

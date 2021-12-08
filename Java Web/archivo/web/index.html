@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <a href="descifrar.html">Descifrar Archivo</a>
+        <form action="servletcifrar" method="POST">
+            <textarea id="cadena" name="texto" cols="30" rows="10" maxlength="100" class="texto" ></textarea>
+            <br>
+            <input type="radio" name ="tamano" value="128" checked>128 bits
+            <br>
+            <input type="radio" name ="tamano" value="192">192 bits
+            <br>
+            <input type="radio" name ="tamano" value="256">256 bits
+            <br>
+            <input type="text" id="key" name="key" maxlength="32" minlength="16">
+            <br>
+            <input type="submit">
+        </form>
+    </body>
+</html>

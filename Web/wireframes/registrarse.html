@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./multimedia/Helados.png">
+    <link href="./css/registrarse.css" rel="stylesheet">
+    <title>Registrarse</title>
+</head>
+<body style="font-family: 'Noto Sans JP', sans-serif;">
+    <header class="header">
+        <div class="container logo-nav-container">
+            <h1 style="font-family: 'Noto Sans JP', sans-serif;">BENYS Y JERYS</h1>
+            <span class="menu-icon">Ver menú</span>
+            <nav class="navigation">
+                <ul class="show">
+                    <li><a href="index.html"><img src="./multimedia/casa.png" alt="iniciar sesión" width="60px" height="60px"></a></li>
+                    <li><a href="iniciarsesion.html"><img src="./multimedia/iniciarsesion.png" alt="iniciar sesión" width="60px" height="60px"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="main">
+        <div class="centrar">
+            <form method="post" name="registrar">
+                <h2 style="font-family: 'Noto Sans JP', sans-serif;">Regístrate</h2>
+                <h4 style="font-family: 'Noto Sans JP', sans-serif;">Nombre</h4>
+                <input  type="text" placeholder="Nombre" name="nombre" minlength="6" maxlength="25" style="font-family: 'Noto Sans JP', sans-serif;">
+                <h4 style="font-family: 'Noto Sans JP', sans-serif;">Apellido Paterno</h4>
+                <input  type="text" placeholder="Apellido Paterno" name="paterno" minlength="6" maxlength="40" style="font-family: 'Noto Sans JP', sans-serif;">
+                <h4 style="font-family: 'Noto Sans JP', sans-serif;">Apellido Materno</h4>
+                <input  type="text" placeholder="Apellido Materno" name="materno" minlength="6" maxlength="40" style="font-family: 'Noto Sans JP', sans-serif;">
+                <h4 style="font-family: 'Noto Sans JP', sans-serif;">Fecha</h4>
+                <input  type="text" placeholder="fecha" name="fecha" minlength="10" maxlength="10" style="font-family: 'Noto Sans JP', sans-serif;">
+                <h4 style="font-family: 'Noto Sans JP', sans-serif;">Telefono Fijo</h4>
+                <input  type="number" placeholder="Ingresa Teléfono fijo" name="fijo" min="5500000000" max="5599999999" style="font-family: 'Noto Sans JP', sans-serif;">
+                <h4 style="font-family: 'Noto Sans JP', sans-serif;">Telefono Celular</h4>
+                <input  type="number" placeholder=" Ingresa Teléfono celular" name="celular" min="5500000000" max="5599999999" style="font-family: 'Noto Sans JP', sans-serif;">
+                <h4 style="font-family: 'Noto Sans JP', sans-serif;">Correo</h4>
+                <input  type="email" placeholder="Ingresa el Correo" name="email" minlength="6" maxlength="45" style="font-family: 'Noto Sans JP', sans-serif;">
+                <h4 style="font-family: 'Noto Sans JP', sans-serif;">Contraseña</h4>
+                <input  type="password" placeholder="Ingresa la contraseña" name="pass" minlength="6" maxlength="45" style="font-family: 'Noto Sans JP', sans-serif;">
+                <h4 style="font-family: 'Noto Sans JP', sans-serif;">Confirmar Contraseña</h4>
+                <input  type="password" placeholder="Confirmar Contraseña" name="confpass" minlength="6" maxlength="45" style="font-family: 'Noto Sans JP', sans-serif;">
+                <button class="boton" type="button" onclick="registrase()" style="font-family: 'Noto Sans JP', sans-serif;">Registrarme</button> 
+            </form>
+            <script src="js/validar.js"></script>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <footer>
+        Iconos diseñados por <a href="https://www.freepik.com" title="Freepik">
+        Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a>
+    </footer>
+</body>
+</html>

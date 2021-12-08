@@ -1,0 +1,109 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    padding:0;
+    margin :0;
+}
+header, nav, ul{
+    background:#ED1C24 /*rgb(47, 0, 0)*/;
+    color: white;
+    /* hacer el menu fijo */
+    position: fixed;
+    left: 0;
+    top: 0;
+    /* ocuapamos todo el ancho */
+    right: 0;
+    width: 100%;
+    height: 10%;
+    margin: 0;
+}
+header a {
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+}
+header a:hover{
+    color: rgb(47, 0, 0) ;
+}
+header ul li img{
+    width:5%;
+    height:5%;
+    float: left;
+    left: 0;
+    top: 0;
+    padding:0;
+    margin :0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+  margin: 0 2% ;
+  width: 95%;
+  height: 80%;
+  justify-content: center;
+  display: flex;
+}
+h1{
+  text-align: center;
+  color: #ED1C24;
+  margin: 0;
+  padding-top: 6%;
+  display: block;
+  width: 100%;
+}
+.izquierda, .derecha{
+  width: 45%;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.izquierda img{
+  width: 95%;
+}
+.derecha{
+  padding: 1rem;
+}
+.botones, select, button{
+  display: inline-block;
+  margin: 1rem .5rem;
+  padding: .5rem;
+  border: 1px solid #ED1C24;
+  border-radius: 1rem;
+  color: #ED1C24;
+  background-color: #ffffff ;
+  text-align: center;
+  font-size: .8rem;
+}
+.botones{
+  width: 12%;
+  text-decoration: none;
+}
+.botones:hover, button:hover{
+  background-color: #ED1C24;
+  color: #ffffff;
+}
+table{
+  margin: 0 auto;
+  color: rgb(47, 0, 0) ;
+}
+td{
+  border-right: 1px solid #ED1C24 ;
+  font-size: 1rem;
+  padding: .2rem;
+  text-align: center;
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color:#ED1C24 ;
+  color: #ffffff ;
+  text-align: center;
+  font-family: 'Calibri Light' ;
+  font-size: 1rem;
+  display: block;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/logo.png">
+    <link rel="stylesheet" href="./css/carrito.css">
+    <title>Carrito</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="iconos"><span class="material-icons">home</span>Inicio</a></li>
+                <li><span class="material-icons tienda">store</span></li>
+                <li>
+                    <form>
+                        <select name="area" onChange="location = form.area.options[form.area.selectedIndex].value;">
+                            <option selected="true" disabled="disabled">Tienda</option>
+                            <option value="helados.html">Helados</option>
+                            <option value="paletas.html"> Paletas</option>
+                            <option value="aguas.html">Aguas</option>
+                        </select>
+                    </form>
+                </li>
+                <li><a class="iconos" href="registro.html"><span class="material-icons"> how_to_reg</span>Regístrate</a></li>
+                <li><a class="iconos" href="iniciosesion.html"><span class="material-icons">account_circle</span>Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contenedor">
+        <h1>Tu Carrito</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID Pedido</th>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <button type="button">Generar ticket de compra</button>
+    </div>
+    <footer>
+        <p>Integrantes:</p>
+    </footer>
+</body>
+
+</html>

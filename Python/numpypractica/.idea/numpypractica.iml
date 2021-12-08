@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/venv" />
+    </content>
+    <orderEntry type="jdk" jdkName="Python 3.9" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="practicaPanda" />
+    <orderEntry type="module" module-name="pandas" />
+    <orderEntry type="module" module-name="Estadisticas" />
+    <orderEntry type="module" module-name="Act4_GraficaEstadisticas_JEVG" />
+    <orderEntry type="module" module-name="Act_Graficas_Estadistica" />
+    <orderEntry type="module" module-name="amorcito" />
+    <orderEntry type="module" module-name="Connecionbasededatos" />
+    <orderEntry type="module" module-name="ManejarBDMysql" />
+    <orderEntry type="module" module-name="act1_facturas_VGJE" />
+    <orderEntry type="module" module-name="act2_POO_VGJE" />
+    <orderEntry type="module" module-name="act6_BDPython_VGJE" />
+    <orderEntry type="module" module-name="amor" />
+  </component>
+</module>

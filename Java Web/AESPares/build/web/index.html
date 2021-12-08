@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="cifrar" method="POST">
+            <textarea id="cadena" name="cadena" cols="30" rows="10" maxlength="100" class="texto" ></textarea>
+            <br>
+            <input type="radio" name ="tipo" value="128" checked>128
+            <br>
+            <input type="radio" name ="tipo" value="192">192
+            <br>
+            <input type="radio" name ="tipo" value="256">256
+            <br>
+            <input type="text" id="llave" name="llave" maxlength="32" minlength="16">
+            <br>
+            <input type="submit">
+        </form>
+    </body>
+</html>

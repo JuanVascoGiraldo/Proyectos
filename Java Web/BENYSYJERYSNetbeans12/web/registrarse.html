@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./multimedia/Helados.png">
+    <link href="./css/registrarse.css" rel="stylesheet">
+    <title>Iniciar sesión</title>
+</head>
+<body style="font-family: 'Noto Sans JP', sans-serif;">
+    <header class="header">
+        <div class="container logo-nav-container">
+            <h1 style="font-family: 'Noto Sans JP', sans-serif;">BENYS Y JERYS</h1>
+            <span class="menu-icon">Ver menú</span>
+            <nav class="navigation">
+                <ul class="show">
+                    <li><a href="index.html"><img src="./multimedia/casa.png" alt="iniciar sesión" width="60px" height="60px"></a></li>
+                    <li><a href="iniciarsesion.html"><img src="./multimedia/iniciarsesion.png" alt="iniciar sesión" width="60px" height="60px"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="main">
+        <div class="centrar">
+            <form method="post">
+                <h2 style="font-family: 'Noto Sans JP', sans-serif;">Regístrate</h2>
+                <table>
+                    <tr>
+                        <td><input  type="text" placeholder="Nombre" required="true" minlength="6" maxlength="25" style="font-family: 'Noto Sans JP', sans-serif;"></td>
+                        <td><input  type="text" placeholder="Apellido Paterno" required="true" minlength="6" maxlength="40" style="font-family: 'Noto Sans JP', sans-serif;"></td>
+                    </tr>
+                    <tr>
+                        <td><input  type="text" placeholder="Apellido Materno" required="true" minlength="6" maxlength="40" style="font-family: 'Noto Sans JP', sans-serif;"></td>
+                        <td><input  type="number" placeholder="Edad"minlength="6" maxlength="40"required="true" style="font-family: 'Noto Sans JP', sans-serif;"></td>
+                    </tr>
+                    <tr>
+                        <td><input  type="text" placeholder="Domicilo" required="true" minlength="6" maxlength="70" style="font-family: 'Noto Sans JP', sans-serif;"></td>
+                        <td><input  type="number" placeholder="Teléfono fijo" min="5500000000" max="5599999999" required="true" style="font-family: 'Noto Sans JP', sans-serif;"></td>
+                    </tr>
+                    <tr>
+                        <td><input  type="number" placeholder="Teléfono celular" min="5500000000" max="5599999999" required="true" style="font-family: 'Noto Sans JP', sans-serif;"></td>
+                        <td><input  type="email" placeholder="Email" required="true" minlength="6" maxlength="45" style="font-family: 'Noto Sans JP', sans-serif;"></td>
+                    </tr>
+                    <tr>
+                        <td><input  type="password" placeholder="Contraseña" required="true" minlength="6" maxlength="45" style="font-family: 'Noto Sans JP', sans-serif;"></td>
+                        <td> <button class="boton" type="button" onclick="" style="font-family: 'Noto Sans JP', sans-serif;">Registrarme</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <footer>
+        Iconos diseñados por <a href="https://www.freepik.com" title="Freepik">
+        Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a>
+    </footer>
+</body>
+</html>

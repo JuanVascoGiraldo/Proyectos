@@ -1,0 +1,1 @@
+console.log("holiiiii desde el Subproceso 2 :3, Voy en el grupo 5IV7 UwU");

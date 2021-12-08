@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../BD Python/.idea/BD Python.iml" filepath="$PROJECT_DIR$/../BD Python/.idea/BD Python.iml" />
+      <module fileurl="file://$USER_HOME$/Desktop/Ejemplo Flask y Matplotlib/.idea/Ejemplo Flask y Matplotlib.iml" filepath="$USER_HOME$/Desktop/Ejemplo Flask y Matplotlib/.idea/Ejemplo Flask y Matplotlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Ejemplo Flask y Python.iml" filepath="$PROJECT_DIR$/.idea/Ejemplo Flask y Python.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Estadisticas/.idea/Estadisticas.iml" filepath="$PROJECT_DIR$/../Estadisticas/.idea/Estadisticas.iml" />
+      <module fileurl="file://$USER_HOME$/Desktop/PythonPA/.idea/PythonPA.iml" filepath="$USER_HOME$/Desktop/PythonPA/.idea/PythonPA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../RegresionLineal/.idea/RegresionLineal.iml" filepath="$PROJECT_DIR$/../RegresionLineal/.idea/RegresionLineal.iml" />
+      <module fileurl="file://$USER_HOME$/PycharmProjects/act6_BDPython_VGJE/.idea/act6_BDPython_VGJE.iml" filepath="$USER_HOME$/PycharmProjects/act6_BDPython_VGJE/.idea/act6_BDPython_VGJE.iml" />
+      <module fileurl="file://$USER_HOME$/PycharmProjects/split/.idea/split.iml" filepath="$USER_HOME$/PycharmProjects/split/.idea/split.iml" />
+    </modules>
+  </component>
+</project>

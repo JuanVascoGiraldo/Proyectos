@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./multimedia/Helados.png">
+    <link href="./css/iniciarsesion.css" rel="stylesheet">
+    <title>Iniciar sesión</title>
+</head>
+<body style="font-family: 'Noto Sans JP', sans-serif;">
+    <header class="header">
+        <div class="container logo-nav-container">
+            <h1 style="font-family: 'Noto Sans JP', sans-serif;">BENYS Y JERYS</h1>
+            <span class="menu-icon">Ver menú</span>
+            <nav class="navigation">
+                <ul class="show">
+                    <li><a href="index.html"><img src="./multimedia/casa.png" alt="iniciar sesión" width="60px" height="60px"></a></li>
+                    <li><a href="registrarse.html"><img src="./multimedia/registrar.png" alt="registrarse" width="60px" height="60px"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="main">
+        <div class="centrar">
+                <form method="post" name="iniciar" >
+                    <h2>Inicia sesión</h2>
+                    <input class="form-control" type="text" name="email" placeholder="E-mail Usuario" minlength="6" maxlength="45" style="font-family: 'Noto Sans JP', sans-serif;">
+                    <input class="form-control" type="password" placeholder="Contraseña"  name="pass" minlength="6" maxlength="40" style="font-family: 'Noto Sans JP', sans-serif;">
+                    <button class="boton" type="button" onclick="iniciarsesion()" style="font-family: 'Noto Sans JP', sans-serif;">Iniciar sesión</button>
+                </form>
+                <script src="js/validar.js"></script>
+        </div>
+    </div>
+    <footer>
+        Iconos diseñados por <a href="https://www.freepik.com" title="Freepik">
+        Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a>
+    </footer>
+</body>
+</html>

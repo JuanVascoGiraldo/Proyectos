@@ -1,0 +1,44 @@
+body{
+    background-color: white;
+    font-family: cursive ;
+    color: black;
+    line-height: 1.3rem ;
+    font-size: 1 rem;
+    margin: 0;
+}
+.texto{
+    border: solid black 2px;
+    border-radius: 5px;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    box-shadow: 10px 5px 10px #e20c77;
+}
+.des{
+    border: solid black 2px;
+    border-radius: 5px;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    box-shadow: 10px 5px 10px #e20c77;
+}
+.resultado{
+    border: solid black 2px;
+    border-radius: 5px;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    box-shadow: 10px 5px 10px #e20c77;
+}
+.botones{
+    border: solid black 2px;
+    border-radius: 5px;
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+.botones:hover{
+    box-shadow: 0px 15px 15px #5d06e7;
+    background-color: rgb(170, 37, 223);
+}

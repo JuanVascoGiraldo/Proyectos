@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registro</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href=https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+    </head>
+    <body style="background-color: #0D3B66;">
+         <div class="container">
+            <form name="formulario" method="get" action="Registro">
+                <table align="center" style="text-align: center; color: white;">
+                    <tr>
+                        <td> <h1><label>Nombre:</label></h1></td>
+                        <td><input type="text" name="nombre" style="font-family: 'Noto Sans JP';" required
+                            maxlength="20"></td>
+                    </tr>
+                    <tr>
+                        <td><h1><label>Apellido Paterno:</label></h1></td>
+                        <td> <input type="text" name="appat" style="font-family: 'Noto Sans JP';" required 
+                            maxlength="20"></td>
+                    </tr>
+                    <tr>
+                        <td><h1><label>Apellido Materno:</label></h1></td>
+                        <td><input type="text" name="appmat" style="font-family: 'Noto Sans JP';" required
+                            maxlength="20"></td>
+                    </tr>
+                    <tr>
+                        <td><h1><label>Edad:</label></h1></td>
+                        <td><input type="number" name="edad" min="01" max="99" size="2" required></td>
+                    </tr>
+                    <tr>
+                        <td><h1><label>Correo:</label></h1></td>
+                        <td><input type="email" name="email" style="font-family: 'Noto Sans JP';" required
+                            maxlength="30"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Enviar Datos de Registro" style="font-family: 'Noto Sans JP';"></td>
+                        <td><input type="reset" value="Borrar Registro" style="font-family: 'Noto Sans JP';"></td>
+                    </tr>
+                </table>
+            </form>
+            <a href="index.html">
+                <div style="font-family: 'Noto Sans JP'; border-radius: 5px; width: 20%; 
+                color: white; background-color: black; margin-left: 32rem; text-align: center;">
+                    <h1>Volver al inicio</h1>
+                </div>
+            </a>
+            
+            </div>
+    </body>
+</html>

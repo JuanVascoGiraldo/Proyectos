@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Act4_GraficaEstadisticas_JEVG/.idea/Act4_GraficaEstadisticas_JEVG.iml" filepath="$PROJECT_DIR$/../Act4_GraficaEstadisticas_JEVG/.idea/Act4_GraficaEstadisticas_JEVG.iml" />
+      <module fileurl="file://$USER_HOME$/Downloads/Act_Graficas_Estadistica/.idea/Act_Graficas_Estadistica.iml" filepath="$USER_HOME$/Downloads/Act_Graficas_Estadistica/.idea/Act_Graficas_Estadistica.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Connecionbasededatos/.idea/Connecionbasededatos.iml" filepath="$PROJECT_DIR$/../Connecionbasededatos/.idea/Connecionbasededatos.iml" />
+      <module fileurl="file://$USER_HOME$/OneDrive/Escritorio/Estadisticas/.idea/Estadisticas.iml" filepath="$USER_HOME$/OneDrive/Escritorio/Estadisticas/.idea/Estadisticas.iml" />
+      <module fileurl="file://$USER_HOME$/Desktop/ManejarBDMysql/.idea/ManejarBDMysql.iml" filepath="$USER_HOME$/Desktop/ManejarBDMysql/.idea/ManejarBDMysql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../act1_facturas_VGJE/.idea/act1_facturas_VGJE.iml" filepath="$PROJECT_DIR$/../act1_facturas_VGJE/.idea/act1_facturas_VGJE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../act2_POO_VGJE/.idea/act2_POO_VGJE.iml" filepath="$PROJECT_DIR$/../act2_POO_VGJE/.idea/act2_POO_VGJE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../act6_BDPython_VGJE/.idea/act6_BDPython_VGJE.iml" filepath="$PROJECT_DIR$/../act6_BDPython_VGJE/.idea/act6_BDPython_VGJE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../amor/.idea/amor.iml" filepath="$PROJECT_DIR$/../amor/.idea/amor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../amorcito/.idea/amorcito.iml" filepath="$PROJECT_DIR$/../amorcito/.idea/amorcito.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/numpypractica.iml" filepath="$PROJECT_DIR$/.idea/numpypractica.iml" />
+      <module fileurl="file://$USER_HOME$/Downloads/pandas/.idea/pandas.iml" filepath="$USER_HOME$/Downloads/pandas/.idea/pandas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../practicaPanda/.idea/practicaPanda.iml" filepath="$PROJECT_DIR$/../practicaPanda/.idea/practicaPanda.iml" />
+    </modules>
+  </component>
+</project>
