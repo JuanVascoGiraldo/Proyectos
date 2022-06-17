@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Usuario</title>
+    <link rel="icon" type="image/png" href="./img/5294970.png.opdownload">
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <link rel="stylesheet" href="./CSS/misequipos.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+    <div class="fill">
+        <div class="fil" id="fil" onclick="equipos()"><h3>Mis Equipos</h3></div>
+        <div class="fil2" id="fil2" onclick="cuenta()"><h3>Cuenta</h3></div>
+        <div class="fil2" onclick=""><h3>Cerrar Sesion</h3></div>
+    </div>
+    <br>
+    <div class="compus" id="compus">
+        <div class="equipo">
+            <img src="./img/computadora.png">
+            <br>
+            Numero de Equipo:
+            <br>
+            Laboratorio:
+            <br>
+            Materia:
+            <br>
+            Estado:
+            <br>
+            <button class="boton" onclick="mandardato(1)" data-open="modalR">Realizar Reporte</button>
+            <button class="boton" onclick="location.href = './verReporte.html'">Ver Reportes</button>
+        </div>
+    </div>
+    <div class="cuenta" id="cuenta">
+        <div class="cuen">
+            <img src="./img/usuario.png" class="imgusu">
+            <br>
+            Nombre de Alumno:
+            <br>
+            Boleta Alumno:
+            <br>
+            Grupo:
+            <br>
+            Cambiar Contraseña
+            <br>
+            <form action="CambiarContra" name="changepass">
+                <input type="password" name="contra" id="IScontra" class="texto" placeholder="Contraseña">
+                <button type="button" id="IniciarSesion" class="boton1" onclick="CambiarContra()">Cambiar</button>
+            </form>
+        </div>
+    </div>
+    <div class="modal" id="modalR">
+        <div class="card">
+            <form action="Hreporte" name="hacerreporte">
+                <label for="" class="article">Ingrese la descripción del reporte</label><br>
+                <hr class="linea">
+                <input type="hidden" name="id" id="id" value="" >
+                <textarea name="reporte" id="reporte" class="area" placeholder="Escribe Aqui tu reporte"></textarea>
+                <br>
+               <button type="button" class="submit" onclick="" id="enviar">Realizar</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function equipos(){
+            document.getElementById("compus").style.display = "inline";
+            document.getElementById("cuenta").style.display = "none";
+            document.getElementById("fil").style.borderBottom = "2px solid #0066FF";
+            document.getElementById("fil2").style.borderBottom = "none";
+            document.getElementById("fil").style.hover = "border-bottom: 2px solid #ffffff"
+    
+            document.getElementById("fil").addEventListener("mouseover", function() {
+                document.getElementById("fil").style.borderBottom  = "2px solid #ffffff";
+            });
+                
+            document.getElementById("fil2").addEventListener("mouseout", function() {
+                document.getElementById("fil2").style.borderBottom = "none";
+            });
+    
+            document.getElementById("fil2").addEventListener("mouseover", function() {
+                document.getElementById("fil2").style.borderBottom  = "2px solid #ffffff";
+            });
+                
+            document.getElementById("fil").addEventListener("mouseout", function() {
+                document.getElementById("fil").style.borderBottom = "2px solid #0066FF";
+            });
+        }
+    
+        function cuenta(){
+            document.getElementById("compus").style.display = "none";
+            document.getElementById("cuenta").style.display = "inline";
+            document.getElementById("fil").style.borderBottom = "none";
+            document.getElementById("fil2").style.borderBottom = "2px solid #0066FF";
+    
+            document.getElementById("fil").addEventListener("mouseover", function() {
+                document.getElementById("fil").style.borderBottom  = "2px solid #ffffff";
+            });
+                
+            document.getElementById("fil").addEventListener("mouseout", function() {
+                document.getElementById("fil").style.borderBottom = "none";
+            });
+    
+            document.getElementById("fil2").addEventListener("mouseover", function() {
+                document.getElementById("fil2").style.borderBottom  = "2px solid #ffffff";
+            });
+                
+            document.getElementById("fil2").addEventListener("mouseout", function() {
+                document.getElementById("fil2").style.borderBottom = "2px solid #0066FF";
+            });
+    
+        }
+        function mandardato(idd){
+            document.getElementById("id").value= idd;
+        }
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./JS/validar.js"></script>
+    <script src="./JS/funcionModal.js"></script>
+</body>
+</html>

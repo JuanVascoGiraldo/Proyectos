@@ -24,6 +24,18 @@
         <servlet-name>CerrarSesion</servlet-name>
         <servlet-class>Servlet.CerrarSesion</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Filtro</servlet-name>
+        <servlet-class>Servlet.Filtro</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>miau</servlet-name>
+        <servlet-class>Servlet.miau</servlet-class>
+        <init-param>
+            <param-name>miau</param-name>
+            <param-value>1</param-value>
+        </init-param>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Registrar</servlet-name>
         <url-pattern>/Registrar</url-pattern>
@@ -47,6 +59,14 @@
     <servlet-mapping>
         <servlet-name>CerrarSesion</servlet-name>
         <url-pattern>/CerrarSesion</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Filtro</servlet-name>
+        <url-pattern>/Filtro</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>miau</servlet-name>
+        <url-pattern>/miau</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

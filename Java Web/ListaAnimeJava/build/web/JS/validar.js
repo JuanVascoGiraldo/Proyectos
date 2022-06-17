@@ -96,18 +96,38 @@ function iniciars() {
     }
 }
 
+ function filtrar(valor){
+            $.post('Filtro', {
+				filtro : valor
+			}, function(responseText) {
+				$('#animes').html(responseText);
+			});
+        }
+
+var socket = new WebSocket("ws://localhost:8084/ListaAnimeJava/Eliminar");
+    
+socket.onmessage = function (event) {
+    filtrar(0);
+    console.log(event.data)
+    
+}
+
 function visto (id){
-    location.href = 'CambiarEstado?id=' + id+'&&estado=1' ;
+   socket.send("eliminada");
+   //location.href = './CambiarEstado?id='+ id+'&&estado=1' ;
 }
 
 function eliminar(id){
-    location.href = 'EliminarAnime?id=' + id ;
+    socket.send("eliminada");
+    //location.href = './EliminarAnime?id=' + id ;
 }
 
 function pendiente(id){
-    location.href = 'CambiarEstado?id=' + id+'&&estado=0' ;
+    socket.send("eliminada");
+    //location.href = './CambiarEstado?id=' + id+'&&estado=0' ;
 }
 
 function CerrarSesion(){
     location.href = 'CerrarSesion' ;
 }
+

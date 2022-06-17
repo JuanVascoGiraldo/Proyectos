@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap');
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background: 	#952F57;
+
+}
+
+
+.alinear {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.main-content {
+    text-align: center;
+    margin: 50px;
+}
+
+img {
+    width: 50%;
+}
+
+.main-text {
+    color: #ffffff;
+}
+
+.form {
+    margin: 40px;
+    background: #c9bbd4;
+    text-align: center;
+    padding: 10%;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    font-size: 1.40rem;
+}
+
+form {
+    background: #c9bbd4;
+}
+
+.texto {
+    background: white;
+    width: 75%;
+    border: 1px solid #6666669f;
+    padding: 15px 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    outline: none;
+    transition: border .15s linear;
+}
+
+.texto:focus {
+    border: 3px solid rgb(170, 170, 170);
+}
+
+.Registro,
+.submit {
+    background-color: #952f57;
+    width: 60%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #952f57;
+    cursor: pointer;
+    margin: 10px;
+    color: #ffffff;
+}
+
+.submit {
+    margin-bottom: 20px;
+}
+
+.Registro,
+.submit {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+@media (max-width: 900px) {
+    * {
+        font-size: 16px;
+    }
+    .form {
+        margin: 0;
+        padding: 10px 5px;
+        font-size: 1rem;
+        margin: 50px;
+        margin-bottom: 70px;
+    }
+    .grid {
+        display: grid;
+        gap: 0px;
+        padding: 0;
+    }
+}
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: var(--black);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.35s ease-in;
+    background-color: #bebabac9;
+}
+
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.35s ease-in;
+}
+
+.modal.is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.card {
+    background: #c9bbd4;
+    border-radius: 5px;
+    box-shadow: 1px 2px 8px #0000008a;
+    padding: 1%;
+    width: 95%;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    cursor: default;
+}
+
+.input {
+    background-color: white;
+    padding: 10px;
+    width: 90%;
+    max-width: 400px;
+    margin: 15px auto;
+    border-radius: 5px;
+    border: 1px solid #BCBCBC;
+}
+
+.article {
+    background: #c9bbd4;
+    font-size: 16px;
+}
+
+.select {
+    width: 40%;
+    min-width: 250px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #BCBCBC;
+    border-radius: 5px;
+}
+
+.a {
+    color: #0066FF;
+    text-decoration: none;
+}
+
+.a:visited {
+    color: #0066FF;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.recuperar{
+    font-size: 20px;
+    text-decoration: none;
+    text-align: end;
+    color:blue;
+    cursor:pointer;
+}
+
+.linea{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 1px solid black;
+}

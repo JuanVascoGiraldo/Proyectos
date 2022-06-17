@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap');
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background: 	#952F57;
+    word-wrap: break-word ;
+}
+
+.main{
+    background: #c9bbd4;
+    width: 94%;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    text-align: center;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem
+}
+
+
+a {
+    display: flex;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-right: 2%;
+    margin-left: 2%;
+    font-size: 2rem;
+    border-bottom: 5px solid #ffffff00;
+    transition: all .15s linear;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    width: 40%;
+}
+
+.main-contentimg{
+    width:20%;
+    margin-left: 5%;
+    display: inline-block;
+}
+
+.img1{
+    width: 100%;
+    height: auto;
+}
+
+.main-content{
+    width: 60%;
+    margin-right: 5%;
+    text-align: center;
+    display: inline-block;
+    font-size: 30px;
+}
+.boton{
+    background-color: #952f57;
+    width: 20%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #952f57;
+    cursor: pointer;
+    margin: 10px;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.reporte{
+    width: 90%;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.imgre{
+    display: inline-block;
+    width: 20%;
+    margin-right: 5%;
+}
+
+.texto{
+    width: 70%;
+    font-size: 18px;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    text-align: justify;
+    max-width: 70%;
+    padding: 10px
+}
+
+.area {
+    background-color: #E3E3E3;
+    width: 90%;
+    min-width: 250px;
+    max-width: 600px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.602);
+    resize: none;
+    height: 100px;
+    margin: 10px auto;
+}
+
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: var(--black);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.35s ease-in;
+    background-color: #bebabac9;
+}
+
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.35s ease-in;
+}
+
+.modal.is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*
+    Estilos del modal, o del form
+*/
+
+.card {
+    background: #c9bbd4;
+    border-radius: 5px;
+    box-shadow: 1px 2px 8px #0000008a;
+    padding: 1%;
+    width: 95%;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    cursor: default;
+}
+
+.article {
+    background: #c9bbd4;
+    font-size: 16px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.linea{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 1px solid black;
+}
+
+.submit {
+    background-color: #952f57;
+    width: 60%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #952f57;
+    cursor: pointer;
+    margin: 10px;
+    color: #ffffff;
+}
+

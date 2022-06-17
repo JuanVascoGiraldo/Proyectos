@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asignar maquina</title>
+    <link rel="icon" type="image/png" href="./img/5294970.png.opdownload">
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <link rel="stylesheet" href="./CSS/misequipos.css">
+    <script src="http2://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+    <div class="mainuwu">
+        <a href="./equipos.html"class="aa">
+            <img src="./img/bxs-left-arrow.svg" alt="Imagen" class="imagen"> Volver
+        </a>
+        <div class="materia">
+            <button class="boton33" onclick="mandardato(2,'miau')">PSW</button>
+            <button class="boton33" onclick="mandardato(2,'miau')">LPTII</button>
+            <form name="Maquina" action="AMaquina">
+                <input type="hidden" name="id" id="id" value="">
+                     <div class="materia-c">
+                        Materia: <input id="materia" name="materia" type="text" value="uwu" readonly>
+                    </div>
+                    <div class="materia-c">
+                        LBD: Numero de Maquina
+                        <br>
+                        <select name="LBD" id="LBD">
+                            <option value="0">No aplica</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="materia-c">
+                        LNV: Numero de Maquina
+                        <br>
+                        <select name="LNV" id="LNV">
+                            <option value="0">No aplica</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="materia-c">
+                        LDS: Numero de Maquina
+                        <br>
+                        <select name="LDS" id="LDS">
+                            <option value="0">No aplica</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="materia-c">
+                        4.0: Numero de Maquina
+                        <br>
+                        <select name="Cuatro" id="Cuatro">
+                            <option value="0">No aplica</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="materia-c">
+                        <button class="boton" onclick="AsignarMaquina()">Asignar Maquinas</button>
+                    </div>
+            </form>
+            <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script src="./JS/validar.js"></script>
+            <script>
+                function mandardato(idd, nombre){
+                    document.getElementById("id").value= idd;
+                    document.getElementById("materia").value= nombre;
+                }
+            </script>
+        </div> 
+    </div>
+</body>
+</html>

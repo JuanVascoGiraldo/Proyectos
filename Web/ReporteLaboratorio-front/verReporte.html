@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Reporte</title>
+    <link rel="icon" type="image/png" href="./img/5294970.png.opdownload">
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <link rel="stylesheet" href="./CSS/verreporte.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+    <div class="main">
+        <a href="./MisEquipos.html">
+            <img src="./img/bxs-left-arrow.svg" alt="Imagen"> Volver
+        </a>
+        <div class="main-contentimg">
+            <img src="./img/computadora.png" alt="imagen pc" class="img1">
+        </div>
+        <div class="main-content">
+            Laboratorio:
+            <br>
+            <br>
+            Numero de Computadora:
+            <br>
+            <br>
+            Estado:
+            <br>
+            <button class="boton">Funcionamiento</button>
+            <button class="boton">Mantenimiento</button>
+            <button class="boton">Deshabilitada</button>
+        </div>
+        <br>
+        <br>
+        <div class="reporte">
+            <img src="./img/descargar.png" class="imgre">
+            <div class="texto">
+                Fecha y hora de reporte: 06/06/2022 a 10:20
+                <br>
+                Nombre y boleta de estudiante que realizo el reporte:
+                <br>
+                Sergio adrian 2020200000
+                <br>
+                descripción del reporte:
+                <br>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                <br>
+                Fecha y hora de solucion:
+                <br>
+                descripción de la solución:
+                <br>
+                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                <br>
+                <button class="boton" onclick="enviarDatos(1)" data-open="modalR">Dar Solución</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modalR">
+        <div class="card">
+            <form action="Rereporte" name="resolvereporte">
+                <label for="" class="article">Ingrese la descripción de la solución</label><br>
+                <hr class="linea">
+                <input type="hidden" name="id" id="id" value="" >
+                <textarea name="solucion" id="solucion" class="area" placeholder="Escribe Aqui la solución"></textarea>
+                <br>
+               <button type="button" class="submit" onclick="ResolverResporteN()" id="enviar">Solucionar</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function enviarDatos(idd){
+            document.getElementById("id").value= idd;
+        }
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./JS/validar.js"></script>
+    <script src="./JS/funcionModal.js"></script>
+</body>
+</html>

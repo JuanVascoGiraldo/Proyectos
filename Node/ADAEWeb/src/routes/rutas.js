@@ -1,6 +1,7 @@
 const {Router} = require('express');
 const router = Router();
 const mysql = require('mysql');
+const nodemailer = require("nodemailer");
 
 function IConexion(){
     const mysqlConnection = mysql.createConnection({
@@ -18,6 +19,28 @@ function IConexion(){
       });
     return mysqlConnection;
 }
+function main() {
+    let transporter = nodemailer.createTransport({
+        host: "smtp.gmail.com",
+        port: 587,
+        secure: false, // true for 465, false for other ports
+        auth: {
+          user: "juanlandia3000@gmail.com", // generated ethereal user
+          pass: "revrnkjjonoopgcp", // generated ethereal password
+        },
+    });
+    
+    transporter.verify().then(() =>{
+        console.log("listo para enviar datos")
+    })
+
+        transporter.sendMail({
+        from: '"Fred Foo 👻" <juanlandia3000@gmail.com>', // sender address
+        to: "vasco.giraldo.juan.esteban@gmail.com", // list of receivers
+        subject: "Hello ✔", // Subject line
+        html: "<b>Hello world?</b>", // html body
+      });
+}
 
 router.post('/Registrar', (req, res)=>{
     const {usuario, contra} = req.body;
@@ -29,6 +52,7 @@ router.post('/Registrar', (req, res)=>{
                 const query2 = 'insert into usuario (nom_usu, contra_usu) values (?,?)'
                 mysqlConnection.query(query2, [usuario, contra], (_err, _rows)=>{
                     if(!_err){
+                        main()
                         mysqlConnection.destroy();
                         res.json({
                             status: 'registrado'

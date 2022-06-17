@@ -5,6 +5,7 @@
 <%@page import="Modelo.listaanime"%>
 <%@page contentType="text/html" pageEncoding="UTF-8" session="true" language="java" %>
 <% 
+    
     HttpSession sesion = request.getSession(true);
     if(sesion.getAttribute("id") == null && sesion.getAttribute("nombre") == null){
         response.sendRedirect("index.jsp");
@@ -28,10 +29,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <% 
+        response.setHeader("Cache-Control", "no-store");
+        response.setHeader("Pragma","no-cache");
+        response.setDateHeader("Expires", 0);
+    %>
     <title>Inicio Usuario</title>
     <link rel="stylesheet" href="CSS/estilos.css">
     <link rel="stylesheet" href="CSS/normalize.css">
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
     <div class="principal"><br>
@@ -43,44 +50,52 @@
             <br>
             <h2>Animes vistos: <%=vistos %></h2>
             <h2>Animes Pendientes: <%=pendientes%></h2>
-            <div class="agre" background="img/horis.png" data-open="modalR">
-                <img src="img/add_40px.png">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-            </div>
+            <select id="opciones" name="opciones" onchange="javascript:filtrar(this.value)">
+                <option id="op3" value="2">Todos</option>
+                <option id="op1" value="0">Pendientes</option>
+                <option id="op2" value="1">Vistos</option>
+            </select>
+            <div id="animes">
+                <div class="agre" background="img/horis.png" data-open="modalR">
+                   <img src="img/add_40px.png">
+                   <br>
+                   <br>
+                   <br>
+                   <br>
+                   <br>
+               </div>
+            
             <% 
                 
                 for(listaanime anime:lista){
                     if(anime.getEstado() == 0){
             %>
-            <div class="anime1">
-                <h5>Pendiente</h5>
-                <h5><%=anime.getDes_anime() %></h5>
-                <h5><%=anime.getCapitulos() %> Capitulos</h5>
-                <h5><%=anime.getDes_gen() %></h5>
-                <button type="button" class="botonees1" onclick="visto(<%=anime.getId_dlista() %>)" id="enviar">Visto</button>
-                <button type="button" class="botonees" onclick="eliminar(<%=anime.getId_dlista() %>)" id="enviar">Eliminar</button>
-                <br>
-            </div>
+                <div class="anime1">
+                    <h5>Pendiente</h5>
+                    <h5><%=anime.getDes_anime() %></h5>
+                    <h5><%=anime.getCapitulos() %> Capitulos</h5>
+                    <h5><%=anime.getDes_gen() %></h5>
+                    <button type="button" class="botonees1" onclick="visto(<%=anime.getId_dlista() %>)" id="enviar">Visto</button>
+                    <button type="button" class="botonees" onclick="eliminar(<%=anime.getId_dlista() %>)" id="enviar">Eliminar</button>
+                    <br>
+                </div>
             <% 
                 }else if(anime.getEstado() == 1){
             %>
-            <div class="anime2">
-                <h5>Visto</h5>
-                <h5><%=anime.getDes_anime() %></h5>
-                <h5><%=anime.getCapitulos() %> Capitulos</h5>
-                <h5><%=anime.getDes_gen() %></h5>
-                <button type="button" class="botonees2" onclick="pendiente(<%=anime.getId_dlista() %>)" id="enviar">Pendiente</button>
-                <button type="button" class="botonees" onclick="eliminar(<%=anime.getId_dlista() %>)" id="enviar">Eliminar</button>
-                <br>
-            </div>
+                <div class="anime2">
+                    <h5>Visto</h5>
+                    <h5><%=anime.getDes_anime() %></h5>
+                    <h5><%=anime.getCapitulos() %> Capitulos</h5>
+                    <h5><%=anime.getDes_gen() %></h5>
+                    <button type="button" class="botonees2" onclick="pendiente(<%=anime.getId_dlista() %>)" id="enviar">Pendiente</button>
+                    <button type="button" class="botonees" onclick="eliminar(<%=anime.getId_dlista() %>)" id="enviar">Eliminar</button>
+                    <br>
+                </div>
             <% 
                     }
                 }
             %>
+            </div>
         </div>
         <br>
     </div>

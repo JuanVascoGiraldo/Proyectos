@@ -4,8 +4,8 @@ const mysql = require('mysql');
 
 function conectar(){
     const mysqlConnection = mysql.createConnection({
-        host: '192.168.0.4',
-        user: 'JuanVasco',
+        host: 'localhost',
+        user: 'root',
         password: '03042021',
         database: 'listaanime',
         multipleStatements: true
@@ -22,8 +22,10 @@ function conectar(){
 router.post('/', (req, res)=>{
     const{id}= req.body;
     var mysqlConnection = conectar();
-    const query = 'select dlistaanime.id_dlista, dlistaanime.des_anime,  dlistaanime.cap , dlistaanime.estado, cgeneroanime.des_gen  from dlistaanime INNER JOIN cgeneroanime ON dlistaanime.id_gen = cgeneroanime.id_gen  where dlistaanime.id_lista = ? order by dlistaanime.estado ASC';
-    mysqlConnection.query(query, id, (err, rows)=>{
+    //const query = 'select dlistaanime.id_dlista, dlistaanime.des_anime,  dlistaanime.cap , dlistaanime.estado, cgeneroanime.des_gen  from dlistaanime INNER JOIN cgeneroanime ON dlistaanime.id_gen = cgeneroanime.id_gen  where dlistaanime.id_lista = ? order by dlistaanime.estado ASC';
+    //mysqlConnection.query(query, id, (err, rows)=>{
+    const query = 'select dlistaanime.id_dlista, dlistaanime.des_anime,  dlistaanime.cap , dlistaanime.estado, cgeneroanime.des_gen  from dlistaanime INNER JOIN cgeneroanime ON dlistaanime.id_gen = cgeneroanime.id_gen order by dlistaanime.estado ASC';
+    mysqlConnection.query(query, (err, rows)=>{
         if(!err){
             mysqlConnection.destroy();
             res.json({
@@ -57,8 +59,10 @@ router.post('/Agregar', (req, res)=>{
 router.post('/Cambiar', (req, res)=>{
     const{id_usu, id, estado} = req.body
     var mysqlConnection = conectar();
-    const query = 'update dlistaanime set estado = ? where id_dlista = ? and id_lista = ? '
-    mysqlConnection.query(query, [estado, id, id_usu], (err, rows)=>{
+    //const query = 'update dlistaanime set estado = ? where id_dlista = ? and id_lista = ? '
+    //mysqlConnection.query(query, [estado, id, id_usu], (err, rows)=>{
+    const query = 'update dlistaanime set estado = ? where id_dlista = ? '
+    mysqlConnection.query(query, [estado, id], (err, rows)=>{
         if(!err){
             mysqlConnection.destroy();
             res.json({'status': 'Actualizado'});
@@ -73,8 +77,10 @@ router.post('/Cambiar', (req, res)=>{
 router.post('/Eliminar', (req, res)=>{
     const{id_usu, id} = req.body
     var mysqlConnection = conectar();
-    const query = 'delete from dlistaanime where id_dlista = ? and id_lista = ?';
-    mysqlConnection.query(query, [id, id_usu], (err, rows)=>{
+    //const query = 'delete from dlistaanime where id_dlista = ? and id_lista = ?';
+    //mysqlConnection.query(query, [id, id_usu], (err, rows)=>{
+    const query = 'delete from dlistaanime where id_dlista = ? ';
+    mysqlConnection.query(query, [id], (err, rows)=>{
         if(!err){
             mysqlConnection.destroy();
             res.json({'status': 'Eliminado'});
